@@ -61,7 +61,7 @@ layers:
   - LAYER1
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - LAYER2
-  - {t: '{', h: LBKR}
+  - {t: '{', h: '['}
   - {t: '}', h: ']'}
   - {t: _, h: '-'}
   - {t: +, h: '='}
