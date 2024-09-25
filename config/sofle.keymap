@@ -88,13 +88,13 @@
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------
 // |     |     BT0    |      BT1      |     BT2      |   BT3   |  BT4  |                    |  RGB_OFF   |  RGB_ON   |           |           |           |      |
 // |     |   BT_CLR   |   BT_CLR_ALL  |              |         |       |                    |  RGB_EFF   |  RGB_EFF  |  RGB_SPI  |  RGB_BRI  |  RGB_BRD  |      |
-// |     |  OUT_USB   |    OUT_BLE    |    EP_OFF    |  EP_ON  |       |                    |  RGB_OFF   |  RGB_ON   |           |           |           |      |
-// |     |  sys_reset |   soft_off    |  bootloader  |  EP_ON  |       |                    |  RGB_OFF   |  RGB_ON   |           |           |           |      |
+// |     |  OUT_USB   |    OUT_BLE    |    EP_OFF    |         |       |                    |  RGB_OFF   |  RGB_ON   |           |           |           |      |
+// |     |  sys_reset |   soft_off    |  bootloader  |         |       |                    |  RGB_OFF   |  RGB_ON   |           |           |           |      |
 //       |            |               |              |         |       |      |      |      |            |           |           |           |           |      |
             bindings = <
 &trans     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2       &bt BT_SEL 3      &bt BT_SEL 4    &mmv MOVE_UP     &rgb_ug RGB_OFF  &rgb_ug RGB_ON      &trans              &trans             &trans             &trans
 &trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans             &trans            &trans          &mmv MOVE_DOWN   &rgb_ug RGB_EFF  &rgb_ug RGB_EFR     &rgb_ug RGB_SPI     &rgb_ug RGB_BRI    &rgb_ug RGB_BRD    &trans
-&trans     &out OUT_USB  &out OUT_BLE    &ext_power EP_OFF  &ext_power EP_ON  &trans          &mmv MOVE_LEFT   &trans           &trans              &trans              &trans             &trans             &trans
+&trans     &out OUT_USB  &out OUT_BLE    &ext_power EP_OFF  &trans            &trans          &mmv MOVE_LEFT   &trans           &trans              &trans              &trans             &trans             &trans
 &trans     &sys_reset    &soft_off       &bootloader        &trans            &trans          &mmv MOVE_RIGHT  &trans           &trans              &sys_reset          &soft_off          &bootloader        &trans
 &trans     &trans        &trans          &trans             &trans            &trans          &mkp LCLK        &trans           &trans              &trans              &trans             &trans             &trans
             >;
