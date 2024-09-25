@@ -81,7 +81,7 @@
 
             display-name = "LAYER1";
             sensor-bindings = <&scroll_encoder>;
-        };ß
+        };
 
         layer_2 {
 
