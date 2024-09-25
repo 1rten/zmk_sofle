@@ -61,10 +61,10 @@ layers:
   - LAYER1
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - LAYER2
-  - {t: '[', h: '{', s: '{'}
-  - {t: ']', h: '}', s: '}'}
-  - {t: '-', h: _, s: _}
-  - {t: '=', h: +, s: +}
+  - {t: '{', h: LBKR}
+  - {t: '}', h: ']'}
+  - {t: _, h: '-'}
+  - {t: +, h: '='}
   LAYER1:
   - F1
   - F2
@@ -125,7 +125,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -192,7 +191,6 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
