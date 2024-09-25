@@ -55,7 +55,7 @@
 &kp TAB          &kp Q      &kp W         &kp E         &kp R        &kp T        &kp DOWN_ARROW   &kp Y      &kp U              &kp I            &kp O            &kp P       &kp BSLH
 &kp CAPS         &kp A      &kp S         &kp D         &kp F        &kp G        &kp LEFT_ARROW   &kp H      &kp J              &kp K            &kp L            &kp SEMI    &kp APOS
 &kp LSHFT        &kp Z      &kp X         &kp C         &kp V        &kp B        &kp RIGHT_ARROW  &kp N      &kp M              &kp COMMA        &kp DOT          &kp FSLH    &kp ENTER
-&kp C_MUTE       &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE    &mo 1        &kp ENTER        &mo 2      &mt LBRC LEFT_BRACKET     &mt RBRC RIGHT_BRACKET    &mt UNDER MINUS   &mt PLUS EQUAL
+&kp C_MUTE       &kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE    &mo 1        &kp ENTER        &mo 2      &mt LBKR LBRC      &mt RBKT RBRC    &mt MINUS UNDER  &mt EQUAL PLUS 
             >;
                                         
 
@@ -75,13 +75,13 @@
 &kp F1      &kp F2           &kp F3          &kp F4           &kp F5           &kp F6             &mmv MOVE_UP     &kp F7           &kp F8           &kp F9          &kp F10     &kp F11       &kp F12
 &kp TILDE   &kp N1           &kp N2          &kp N3           &kp N4           &kp N5             &mmv MOVE_DOWN   &kp N6           &kp N7           &kp N8          &kp N9      &kp N0        &trans             
 &trans      &kp EXCL         &kp AT          &kp HASH         &kp DLLR         &kp PRCNT          &mmv MOVE_LEFT   &kp CARET        &kp AMPS         &kp KP_MULTIPLY &kp LPAR    &kp RPAR      &trans
-&trans      &kp MINUS        &kp UNDER       &kp LBKT         &kp LBRC         &kp BSLH           &mkp MOVE_RIGHT  &kp PIPE         &kp RBRC            &kp RBKT     &kp EQUAL   &kp PLUS      &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans          &trans      &trans        &trans
+&trans      &kp MINUS        &kp UNDER       &kp LBKT         &kp LBRC         &kp BSLH           &mkp MOVE_RIGHT  &kp PIPE         &kp RBRC         &kp RBKT        &kp EQUAL   &kp PLUS      &trans
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans          &trans      &trans        
             >;
 
             display-name = "LAYER1";
             sensor-bindings = <&scroll_encoder>;
-        };
+        };ß
 
         layer_2 {
 
@@ -96,7 +96,7 @@
 &trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans             &trans            &trans          &mmv MOVE_DOWN   &rgb_ug RGB_EFF  &rgb_ug RGB_EFR     &rgb_ug RGB_SPI     &rgb_ug RGB_BRI    &rgb_ug RGB_BRD    &trans
 &trans     &out OUT_USB  &out OUT_BLE    &ext_power EP_OFF  &trans            &trans          &mmv MOVE_LEFT   &trans           &trans              &trans              &trans             &trans             &trans
 &trans     &sys_reset    &soft_off       &bootloader        &trans            &trans          &mmv MOVE_RIGHT  &trans           &trans              &sys_reset          &soft_off          &bootloader        &trans
-&trans     &trans        &trans          &trans             &trans            &trans          &mkp LCLK        &trans           &trans              &trans              &trans             &trans             &trans
+&trans     &trans        &trans          &trans             &trans            &trans          &mkp LCLK        &trans           &trans              &trans              &trans             &trans             
             >;
             display-name = "LAYER2";
             sensor-bindings = <&scroll_encoder>;
